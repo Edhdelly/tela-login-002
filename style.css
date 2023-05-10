@@ -5,12 +5,16 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: rgb(37, 0, 105, 0.4);
+}
+
 section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 100vh;
+    height: 100vh
 }
 
 .wrap {
@@ -19,20 +23,22 @@ section {
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
-    border: 1px solid blue;
+    border: 1px solid black;
+    border-radius: 30px;
 }
 
 .welcome {
     margin: auto;
-    border: 1px solid black;
-    background-color: rgb(136, 8, 8);
+
+    border-radius: 30px;
+    background-color: rgb(37, 0, 105);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     height: 500px;
-    width: 600px;
+    width: 500px;
 }
 
 .welcome h1 {
@@ -48,27 +54,26 @@ section {
     margin-top: 25px;
     width: 150px;
     height: 50px;
-    background-color: rgba(81, 5, 5, 0.7);
+    background-color: rgb(10, 0, 28);
     border: 1px solid white;
     color: whitesmoke;
     cursor: pointer;
 }
 
 .welcome button:hover {
-    color: rgba(81, 5, 5);
+    color: rgb(10, 0, 28);
     background-color: whitesmoke;
-    border: 2px solid rgba(81, 5, 5);
+    border: 2px solid rgb(10, 0, 28);
 }
 
 .create {
-
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     height: 500px;
-    width: 600px;
+    width: 500px;
+    color: white;
 }
 
 
@@ -80,6 +85,7 @@ section {
     border: 1px solid black;
     background-color: white;
     margin: 10px 0;
+    flex-wrap: wrap;
 }
 
 
@@ -97,6 +103,10 @@ input {
 }
 
 .create button {
+    background-color: rgb(10, 0, 28);
+    color: white;
+    border: 1px solid white;
+    margin: 10px 0;
     width: 200px;
     height: 35px;
     border-radius: 20px;
@@ -104,14 +114,27 @@ input {
 
 
 .icons img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 20px;
+    margin: 20px 0;
 }
 
-.icons {
-    border: 1px solid greenyellow;
-    /* margin-bottom: 40px; */
-}
 
-@media 
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 700px) {
+    .wrap {
+        border-radius: 0;
+    }
+
+    .welcome {
+        height: 90vh;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .create {
+        height: 90vh;
+        width: 100%
+    }
+}
