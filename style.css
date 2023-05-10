@@ -58,6 +58,8 @@ section {
     border: 1px solid white;
     color: whitesmoke;
     cursor: pointer;
+    font-size: 20px;
+
 }
 
 .welcome button:hover {
@@ -108,10 +110,19 @@ input {
     border: 1px solid white;
     margin: 10px 0;
     width: 200px;
-    height: 35px;
+    height: 40px;
     border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
+.create button:hover {
+    background-color: white;
+    color: rgb(10, 0, 28);
+    border: 3px solid rgb(10, 0, 28);
+
+
+}
 
 .icons img {
     width: 35px;
